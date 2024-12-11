@@ -1,0 +1,186 @@
+/* Styles généraux */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAD2; /* Blanc cassé */
+    height: 100vh; /* Pour que tout tienne dans l'écran */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu de navigation */
+header nav {
+    background-color: #4682B4; /* Bleu océan */
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: #F5DEB3; /* Sable */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4682B4;
+    color: #F5DEB3;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto; /* Le footer reste en bas de page */
+}
+
+/* Conteneur pour la carte et la liste */
+.map-and-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+    flex: 1; /* Pour que la section map and list occupe tout l'espace disponible */
+}
+
+/* Style pour la carte */
+#map {
+    flex: 2; /* La carte prend plus de place */
+    height: 50vh; /* 50% de la hauteur de l'écran */
+    border: 2px solid #4682B4;
+    border-radius: 8px;
+}
+
+/* Style pour la liste interactive */
+.interactive-list {
+    flex: 1; /* La liste prend moins de place */
+    background-color: #F5DEB3; /* Sable */
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #4682B4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des éléments de la liste */
+.interactive-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.interactive-list li {
+    margin: 5px 0;
+}
+
+/* Style des boutons collapsibles */
+.collapse-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4682B4; /* Bleu océan */
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.collapse-btn:hover {
+    background-color: #5a9bd4; /* Légèrement plus clair au survol */
+}
+
+/* Contenu des éléments collapsibles (initialement masqué) */
+.collapse-content {
+    display: none;
+    padding: 5px 10px;
+    background-color: #FAFAD2; /* Blanc cassé */
+    border: 1px solid #4682B4; /* Bleu océan */
+    margin-top: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel */
+.carousel-container {
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour le carousel */
+    overflow: hidden; /* Cacher les images qui dépassent */
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 80%; /* Prend 80% de la largeur de la fenêtre */
+    height: 100%; /* Prend toute la hauteur du container */
+    object-fit: cover; /* S'assure que l'image couvre bien l'espace */
+    margin-right: 20px; /* Un petit espace entre les images */
+}
+
+/* Style des boutons du carousel */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Eviter le scroll vertical */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Footer reste en bas */
+footer {
+    margin-top: auto;
+}
+
+/* Ajouts de styles généraux */
+h2 {
+    color: #4682B4; /* Bleu océan */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4682B4;
+}
+
+a:hover {
+    text-decoration: underline;
+}

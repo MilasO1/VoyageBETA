@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Découvrir l'Europe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="astuces.html">Astuces</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Conteneur pour la carte et la liste -->
+        <div class="map-and-list">
+            <!-- Div pour la carte -->
+            <div id="map"></div>
+            <!-- Liste interactive des destinations -->
+            <div class="interactive-list">
+                <h2>Destinations populaires</h2>
+                <ul>
+                    <li>
+                        <button class="collapse-btn">Paris, France</button>
+                        <div class="collapse-content">
+                            <a href="destination.html#paris">Voir plus</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapse-btn">Rome, Italie</button>
+                        <div class="collapse-content">
+                            <a href="destination.html#rome">Voir plus</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapse-btn">Londres, Royaume-Uni</button>
+                        <div class="collapse-content">
+                            <a href="destination.html#london">Voir plus</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapse-btn">Barcelone, Espagne</button>
+                        <div class="collapse-content">
+                            <a href="destination.html#barcelona">Voir plus</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapse-btn">Amsterdam, Pays-Bas</button>
+                        <div class="collapse-content">
+                            <a href="destination.html#amsterdam">Voir plus</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapse-btn">Berlin, Allemagne</button>
+                        <div class="collapse-content">
+                            <a href="destination.html#berlin">Voir plus</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="./images/asz.png" alt="Image 1">
+                <img src="./images/azer.png" alt="Image 2">
+                <img src="./images/eeeezeze.png" alt="Image 3">
+                <!-- Ajoute ici d'autres images si nécessaire -->
+            </div>
+            <!-- Boutons de navigation -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Découvrir l'Europe. Tous droits réservés.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
